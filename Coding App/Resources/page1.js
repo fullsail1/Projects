@@ -1,31 +1,4 @@
-// var win2 = Titanium.UI.createWindow({
-    // backgroundColor: 'red',
-    // title: 'Red Window'
-// });
-
-// var win1 = Titanium.UI.iOS.createNavigationWindow({
-   //window: win2
-// });
-
-// var win3 = Titanium.UI.createWindow({
-    // backgroundColor: 'blue',
-    // title: 'Blue Window'
-// });
-// 
-// var button = Titanium.UI.createButton({
-    // title: 'Open Blue Window'
-// });
-// button.addEventListener('click', function(){
-    // win1.openWindow(win3, {animated:true});
-// });
-// 
-// win2.add(button);
-// var button2 = Titanium.UI.createButton({
-    // title: 'Close Blue Window'
-// });
-// button2.addEventListener('click', function(){
-    // win1.closeWindow(win3, {animated:false}); //win3.close() will also work!!
-// });
+ 
 var win1 = Ti.UI.createWindow({});
 
 var myData = require("table");
@@ -61,8 +34,8 @@ pensTable.addEventListener("click",function(e){
 	var pen = e.source.data;
 	console.log(e);
 	console.log("we're clicking");
-	require(penFunc);
-	//require("details.js");
+	
+	//require("perFunc");
 	
 	// Separate Module that is a FUNCTION that accepts PEN as an argument.
 	
@@ -97,7 +70,34 @@ win1.open();
 
 
 
+// var win2 = Titanium.UI.createWindow({
+    // backgroundColor: 'red',
+    // title: 'Red Window'
+// });
 
+// var win1 = Titanium.UI.iOS.createNavigationWindow({
+   //window: win2
+// });
+
+// var win3 = Titanium.UI.createWindow({
+    // backgroundColor: 'blue',
+    // title: 'Blue Window'
+// });
+// 
+// var button = Titanium.UI.createButton({
+    // title: 'Open Blue Window'
+// });
+// button.addEventListener('click', function(){
+    // win1.openWindow(win3, {animated:true});
+// });
+// 
+// win2.add(button);
+// var button2 = Titanium.UI.createButton({
+    // title: 'Close Blue Window'
+// });
+// button2.addEventListener('click', function(){
+    // win1.closeWindow(win3, {animated:false}); //win3.close() will also work!!
+// });
 
 
 
