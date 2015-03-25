@@ -5,14 +5,22 @@ var myData = require("table");
 
 var penFunc = require("details");
 
-var pensTable = Ti.UI.createTableView({ top:"40" });
-
+var pensTable = Ti.UI.createTableView({ top:40 });
+var pensTableTopView = Titanium.UI.createSearchBar({
+    barColor:'red', 
+    showCancel:true,
+    //height:25,
+    top:0
+    //prompt:"here to help"
+});
+Ti.UI.createView({ backgroundColor:"brown" });
 var pens = [];
 
  console.log(myData.data);
   
-for (var i = 0, j = myData.data.length; i < j; i++) {//[n].categories.length; i++){
+for (var i = 0; j = myData.data.length; i<j; i++){ //[n].categories.length; i++){
 	var pen = myData.data[i];
+	console.log(pen);
 		
   	//MAKE ROW
 	var row = Ti.UI.createTableViewRow({
@@ -21,7 +29,7 @@ for (var i = 0, j = myData.data.length; i < j; i++) {//[n].categories.length; i+
 		data : pen,
 		font : {
 			fontFamily : "Thonburi"
-		},
+		}
 	});
 	
 	pens.push(row);
@@ -32,40 +40,68 @@ for (var i = 0, j = myData.data.length; i < j; i++) {//[n].categories.length; i+
 //section.add(row);
 pensTable.addEventListener("click",function(e){
 	var pen = e.source.data;
+	console.log(e.index);
+	console.log(e.source);
 	console.log(e);
 	console.log("we're clicking");
-	
-	//require("perFunc");
-	
-	// Separate Module that is a FUNCTION that accepts PEN as an argument.
-	
-	
-	// var a = Ti.UI.createImageView({
-		// images : "test45.jpg",
-		// top:25,
-		// height:350,
-		// width:200,	
-	// });
+	var a = Ti.UI.createImageView({
+		image : pen.img,
+		top:20,
+		height:200,
+		width:300,	
+	});
+	var a1= Ti.UI.createWindow({backgroundColor:"gray",});
+	var words = Titanium.UI.createTextArea({
+	color:'#999',
+	bottom:"130",
+	value:'Here at Picky Penners we select the finest writing utensils from various discount vendors offering your the most affordable options to add to your collections ',
+	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	textAlign:'center',
+	width:'auto'
 });
 
 
+	var back = Titanium.UI.createLabel({
+	color:'#999',
+	bottom:"25",
+	text:'EXIT',
+	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	textAlign:'center',
+	width:'auto'
+});
 
+back.addEventListener("click", function() {
+		console.log("we're clicking");
+		
+		a1.close();
+});
+	//a1.add(pensTableTopView);
+	a1.add(back);
+	a1.add(words);
+	a1.add(a);
+	a1.open();
+	//win1.open(a1);
+	//require("perFunc");
+	// Separate Module that is a FUNCTION that accepts PEN as an argument.
+});
+
+
+//topWin.openWindow();
 //console.log(myData.data.pens[0].price);
 
-
-	
 // pensTable.setData(sectionAll);         
 // mainWin.add(pensTable);
 // mainWin.open();
 // win3.add(button2);
 //pensTable.setData();
+win1.add(pensTableTopView);
 win1.add(pensTable);
 win1.open();
 
-
-
-
-
+// var topWin = Ti.UI.iOS.createNavigationWindow({window:win1});
+// 
+// 
+// topWin.open();
 
 
 
@@ -100,46 +136,3 @@ win1.open();
 // });
 
 
-
-
-
-
-// var win1 = Titanium.UI.iOS.createNavigationWindow({
-   // window: win2,
-   // backgroundColor:"red",
-// });
-// 
-// 
-// 
-// var label1 = Titanium.UI.createLabel({
-	// color:'#999',
-	// text:'I am Window 1',
-	// font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	// textAlign:'center',
-	// width:'auto'
-// });
-// 
-// 
-// 
-// 
-// 
-// //
-// // // create controls tab and root window
-// //
-// var win2 = Titanium.UI.createWindow({  
-    // title:'yes',
-    // backgroundColor:'#fff'
-// });
-// 
-// var label2 = Titanium.UI.createLabel({
-	// color:'#999',
-	// text:'I am Window 2',
-	// font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	// textAlign:'center',
-	// width:'auto'
-// });
-// 
-// win2.add(label2);
-// 
-// win1.add(label1);
-// win1.open();

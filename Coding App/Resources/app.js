@@ -6,25 +6,50 @@
 //What is App about?
 //Pen broker
 //
+
+
 var win0 = Titanium.UI.createWindow({  
     title:'Title',
     backgroundColor:'#fff'
 });
+var pic1 = Titanium.UI.createImageView({
+	image: "pens/bechdel-cartoon.jpg",
+	top: 85,
+	
+	height:270,
+	width:270	
+});
+var picback = Titanium.UI.createView({
+	backgroundColor: "brown",
+	top: 75,
+	
+	height:300,
+	width:300	
+});
 
 
 var label0 = Titanium.UI.createLabel({
-	color:'#999',
-	bottom:"100",
+	
+	bottom:"30",
 	text:'Enter Site',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+	color:'brown',
+	font:{fontSize:100,fontFamily:'Party LET'},
+	textAlign:'center',
+	width:'auto'
+});
+
+var label1 = Titanium.UI.createLabel({
+	
+	top:"25",
+	text:'Picky Penners',
+	color:'69787C',
+	font:{fontSize:50,fontFamily:'Party LET'},
 	textAlign:'center',
 	width:'auto'
 });
 
 label0.addEventListener("click", function() {
-		console.log("we're clicking");
-		
-		require("page1");
+	   require("page1");
 });
       
 	
@@ -33,6 +58,8 @@ label0.addEventListener("click", function() {
 
 
 //win1.open();
-
+win0.add(picback);
+win0.add(pic1);
+win0.add(label1);
 win0.add(label0);
 win0.open();

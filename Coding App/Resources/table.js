@@ -6,7 +6,23 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image01.jpg"
+            "img" : "pens/image01.jpg"
+        },
+         {
+            "type": "ballpoint",
+            "maker": "Bic",
+            "inkcolor": "blue",
+            "body": "plastic",
+            "length": "6 inches",
+            "img" : "pens/image01i.jpg"
+        },
+         {
+            "type": "ballpoint",
+            "maker": "Bic",
+            "inkcolor": "blue",
+            "body": "plastic",
+            "length": "6 inches",
+            "img" : "pens/image02i.jpg"
         },
 
         {
@@ -15,7 +31,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "metal",
             "length": "6 inches",
-            "img" : "image02.jpg"
+            "img" : "pens/image02.jpg"
         },
         {
             "type": "ballpoint",
@@ -23,7 +39,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image03.jpg"
+            "img" : "pens/image03.jpg"
         },
         {
             "type": "ballpoint",
@@ -31,7 +47,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "ceramic",
             "length": "5 inches",
-            "img" : "image04.jpg"
+            "img" : "pens/image04.jpg"
         },
         {
             "type": "ballpoint",
@@ -39,7 +55,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image05.jpg"
+            "img" : "pens/image05.jpg"
         },
         {
             "type": "ballpoint",
@@ -47,7 +63,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image06.jpg"
+            "img" : "pens/image06.jpg"
         },
         {
             "type": "ballpoint",
@@ -55,7 +71,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image07.jpg"
+            "img" : "pens/image07.jpg"
         },
         {
             "type": "ballpoint",
@@ -63,7 +79,7 @@ exports.data = [
             "inkcolor" : "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image08.jpg"
+            "img" : "pens/image08.jpg"
         },
         {
             "type": "ballpoint",
@@ -71,7 +87,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image09.jpg"
+            "img" : "pens/image09.jpg"
         },
         {
             "type": "ballpoint",
@@ -79,15 +95,15 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image10.jpg"
+            "img" : "pens/image10.jpg"
         },
         {
             "type": "ballpoint",
-            "maker": "inkwell",
+            "maker": "luxor",
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image11.jpg"
+            "img" : "pens/image11.jpg"
         },
         {
             "type": "ballpoint",
@@ -95,31 +111,31 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image12.jpg"
+            "img" : "pens/image12.jpg"
         },
         {
             "type": "ballpoint",
-            "maker": "montblanc",
+            "maker": "parker",
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image13.jpg"
+            "img" : "pens/image13.jpg"
         },
         {
             "type": "ballpoint",
-            "maker": "Bic",
+            "maker": "luxor",
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image14.jpg"
+            "img" : "pens/image14.jpg"
         },
         {
             "type": "fountain",
-            "maker": "montblanc",
+            "maker": "technical",
             "inkcolor": "black",
             "body": "gold",
             "length": "6 inches",
-            "img" : "image15.jpg"
+            "img" : "pens/image15.jpg"
         },
         {
             "type": "ballpoint",
@@ -127,15 +143,15 @@ exports.data = [
             "inkcolor": "yellow",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image16.jpg"
+            "img" : "pens/image16.jpg"
         },
         {
             "type": "ballpoint",
-            "maker": "sharpie",
+            "maker": "technical",
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image17.jpg"
+            "img" : "pens/image17.jpg"
         },
         {
             "type": "fountain",
@@ -143,39 +159,39 @@ exports.data = [
             "inkcolor": "black",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image18.jpg"
+            "img" : "pens/image18.jpg"
         },
         {
             "type": "felt",
-            "maker": "Bic",
+            "maker": "luxor",
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image19.jpg"
+            "img" : "pens/image19.jpg"
         },
         {
             "type": "ballpoint",
-            "maker": "technicalpen",
+            "maker": "technical",
             "inkcolor": "blue",
             "body": "plastic",
             "length": "4 inches",
-            "img" : "image20.jpg"
+            "img" : "pens/image20.jpg"
         },
         {
             "type": "ballpoint",
-            "maker": "Bic",
+            "maker": "luxor",
             "inkcolor": "red",
             "body": "metal",
             "length": "5 inches",
-            "img" : "image21.jpg"
+            "img" : "pens/image21.jpg"
         },
         {
             "type": "ballpoint",
-            "maker": "technicalpen",
+            "maker": "parker",
             "inkcolor": "blue",
             "body": "plastic",
             "length": "5 inches",
-            "img" : "image22.jpg"
+            "img" : "pens/image22.jpg"
         },
         {
             "type": "ballpoint",
@@ -187,19 +203,67 @@ exports.data = [
         },
         {
             "type": "ballpoint",
-            "maker": "parker",
+            "maker": "papermate",
             "inkcolor": "black",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image24.jpg"
+            "img" : "pens/image24.jpg"
         },
         {
             "type": "ballpoint",
-            "maker": "uniball",
+            "maker": "papermate",
             "inkcolor": "red",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "image25.jpg"
+            "img" : "pens/image25.jpg"
         },
+        {
+            "type": "ballpoint",
+            "maker": "LargoSTar_EXCLUSIVE",
+            "inkcolor": "red",
+            "body": "plastic",
+            "length": "6 inches",
+            "img" : "pens/image25.jpg"
+        },
+        {
+            "type": "ballpoint",
+            "maker": "LargoSTar_EXCLUSIVE",
+            "inkcolor": "red",
+            "body": "plastic",
+            "length": "6 inches",
+            "img" : "pens/image26.jpg"
+        },
+        {
+            "type": "ballpoint",
+            "maker": "LargoSTar_EXCLUSIVE",
+            "inkcolor": "Hera RED",
+            "body": "plastic",
+            "length": "6 inches",
+            "img" : "pens/image27.jpg"
+        },
+        {
+            "type": "ballpoint",
+            "maker": "LargoSTar_EXCLUSIVE",
+            "inkcolor": "Midas Gold",
+            "body": "plastic",
+            "length": "6 inches",
+            "img" : "pens/image28.jpg"
+        },
+        {
+            "type": "ballpoint",
+            "maker": "LargoSTar_EXCLUSIVE",
+            "inkcolor": "Diamonte",
+            "body": "plastic",
+            "length": "6 inches",
+            "img" : "pens/image29.jpg"
+        },
+        {
+            "type": "ballpoint",
+            "maker": "LargoSTar_EXCLUSIVE",
+            "inkcolor": "Atomic blue",
+            "body": "plastic",
+            "length": "6 inches",
+            "img" : "pens/image30.jpg"
+        }
 
     ];
