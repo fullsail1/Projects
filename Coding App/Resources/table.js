@@ -14,7 +14,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "pens/image01i.jpg"
+            "img" : "pens/image01c.jpg"
         },
          {
             "type": "ballpoint",
@@ -22,7 +22,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "plastic",
             "length": "6 inches",
-            "img" : "pens/image02i.jpg"
+            "img" : "pens/image2b.jpg"
         },
 
         {
@@ -31,7 +31,7 @@ exports.data = [
             "inkcolor": "blue",
             "body": "metal",
             "length": "6 inches",
-            "img" : "pens/image02.jpg"
+            "img" : "pens/image9b.jpg"
         },
         {
             "type": "ballpoint",

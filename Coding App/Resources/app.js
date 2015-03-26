@@ -42,17 +42,21 @@ var label1 = Titanium.UI.createLabel({
 	
 	top:"25",
 	text:'Picky Penners',
-	color:'69787C',
+	color:'brown',
 	font:{fontSize:50,fontFamily:'Party LET'},
 	textAlign:'center',
 	width:'auto'
 });
 
 label0.addEventListener("click", function() {
-	   require("page1");
+	   require("page1a");
+	   //play.stop();
 });
       
-	
+var play = Ti.Media.createAudioPlayer({
+	url: 'lana-del-rey-young-and-beautiful.mp3'
+});
+play.start();	
 
 
 
