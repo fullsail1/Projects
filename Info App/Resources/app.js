@@ -1,64 +1,154 @@
-// this sets the background color of the master UIView (when there are no windows/tab groups on it)
-Titanium.UI.setBackgroundColor('#000');
+//window
 
-// create tab group
-var tabGroup = Titanium.UI.createTabGroup();
-
-
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
-    icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
+var win = Ti.UI.createWindow({
+  backgroundImage: 'tree_bark.png'
 });
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
+//body
+var label0 = Titanium.UI.createLabel({
+	
+	top:"25",
+	text:'Party Penners Club',
+	color:'brown',
+	font:{fontSize:35,fontFamily:'Polgi'},
 	textAlign:'center',
 	width:'auto'
 });
 
-win1.add(label1);
 
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
-});
+//body
+	//text fields
+var label1= Ti.UI.createLabel({text:"Member Login", top: 140, color: "brown",font:{fontSize:19,fontFamily:'Polgi'}, textAlign:'center', });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+var textArea1 = Ti.UI.createTextField({
+  borderWidth: 1,
+  borderColor: '#bbb',orderColor: '#bbb',
+  borderRadius: 2,
+  color: '#888',
+  font: {fontSize:12, fontWeight:'bold'},
+  keyboardType: Titanium.UI.KEYBOARD_APPEARANCE_DEFAULT,
+  returnKeyType: Ti.UI.RETURNKEY_GO,
+  textAlign: 'center',
+  value: 'USERNAME',
+  top: 170,
+  width: 200, height : 35
 });
 
-win2.add(label2);
+if (textArea1 ===" "){
+    //This runs anytime that the age is not a number
+    //Reprompt the user for a number
+    alert("please enter a value");
+}
+
+var textArea2 = Ti.UI.createTextField({
+  borderWidth: 1,
+  borderColor: '#bbb',
+  borderRadius: 2,
+  color: '#888',
+  font: {fontSize:12, fontWeight:'bold'},
+  keyboardType: Titanium.UI.KEYBOARD_APPEARANCE_DEFAULT,
+  returnKeyType: Ti.UI.RETURNKEY_GO,
+  textAlign: 'center',
+  value: 'PASSWORD',
+  top: 220,
+  width: 200, height : 35
+});
+var textArea3 = Ti.UI.createButton({
+  borderWidth: 1,
+  borderColor: '#bbb',
+  borderRadius: 2,
+  backgroundColor: "green",
+  color: '#888',
+  title: "ENTER",
+  textAlign:'center',
+  value: 'I am a textarea',
+  top: 280,
+  width:150, 
+  height:35
+});
+var label2 = Ti.UI.createLabel({text: "Not a Member? Sign Up NOW", top:325, color: "blue"});
+
+textArea3.addEventListener("click", function() {
+		
+		require("page1a");
+		console.log("we're clicking");
+});
+
+label2.addEventListener("click", function() {
+		console.log("we're clicking");
+		alert("You will now be taken to a new window");
+		require("msp");
+		
+});
+
+//code
+
+var uName = textArea1;
+console.log(uName);
+var pWord = textArea2;
+console.log(pWord);
+
+textArea3.addEventListener('click', function message(e){ 
+	var alert1 = Titanium.UI.createAlertDialog({ 
+		title: 'Hello', message: 'You have logged in with a username of "'+textArea1.value+'"', 
+		buttonNames: ['Ok'] }); alert1.show();
+});
+//win.add(button1);
+
+
+//var back= Ti.UI.createImageView({image:"tree_bark.png"});
+
+//win.add(back);
+
+
+win.add(textArea3);
+win.add(textArea2);
+win.add(textArea1);
+win.add(label2);
+win.add(label1);
+win.add(label0);
+win.open();
 
 
 
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
 
 
-// open tab group
-tabGroup.open();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var groupsButton = Ti.UI.createButton({
+    // title: "Groups"
+// });
+// 
+// var addButton = Ti.UI.createButton({
+    // systemButton: Ti.UI.iPhone.SystemButton.ADD
+// });
+// 
+// 
+// 
+// 
+// var navWin = Ti.UI.iOS.createNavigationWindow({
+    // window: win
+// });
+// win.open();
+// navWin.open();

@@ -1,0 +1,2 @@
+dependencies: \
+  /Users/osahon/Desktop/MIU/Projects/Info\ App/build/iphone/main.m

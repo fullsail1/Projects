@@ -48,7 +48,7 @@ pensTable.addEventListener("click",function(e){
 		top:20,
 		height:200,
 		width:300,	
-	});
+	}); 
 	var a1= Ti.UI.createWindow({backgroundColor:"gray",});
 	var words = Titanium.UI.createTextArea({
 	color:'#999',
